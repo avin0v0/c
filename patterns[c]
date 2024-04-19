@@ -1,0 +1,60 @@
+#include<stdio.h>
+
+int main(){
+    int a,b;
+    printf("enter a:  ");
+    scanf("%d",&a);
+    printf("enter b:  ");
+    scanf("%d",&b);
+    
+    for(int i=0;i<a;i++){
+        for(int j=0;j<b;j++){
+            printf(" * ");
+
+        }
+        
+    }printf("\n");
+
+
+
+    
+    int s;
+    printf("enter n:  ");
+    scanf("%d",&s);
+    for(int i=0;i<=s;i++){
+        for(int j=0;j<i;j++){
+            printf(" * ");
+            
+    }
+    printf("\n");
+}
+
+
+
+int s;
+    printf("enter n:  ");
+    scanf("%d",&s);
+    for(int i=0;i<=s;i++){
+        for(int j=0;j<s-i;j++){
+            printf(" * ");
+            
+    }
+    printf("\n");
+}
+
+int n,i,j;
+    printf("Enter row number:");
+    scanf("%d", &n);
+    for(j=n;j>=1;j--){
+        for(i=1;i<=j;i++){
+            printf("*");
+        }
+    printf("\n");
+    }
+
+
+}
+
+
+
+
