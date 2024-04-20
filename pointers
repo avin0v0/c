@@ -1,0 +1,13 @@
+int main(){
+    //pointers
+    printf("lets learn about pointers \n");
+    int a=89;
+    
+    int *ptr=&a;  //&(anything)=add. of that thing!
+    printf("the value of a is %d\n",a);
+    
+    printf("the value of a is %d\n",ptr);
+
+    //pointer er berote jeita aache,oitar value print hbe (*dile)
+    printf("the value of a is %d",*ptr);
+}
