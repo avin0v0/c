@@ -1,0 +1,15 @@
+int main(){
+   //pointers 2.0
+   char a='67';
+   char* ptra=&a;
+   printf("%d\n",ptra);
+   printf("%d\n",ptra+1);
+
+   int arr[5]={5,10,15,20,25};
+   printf("value at position 3 is %d\n",arr[3]);
+   printf("add at position 3 is %d\n",&arr[3]);
+   printf("add of second elements is %d\n",arr+1);
+   printf("value at position 4 is %d\n",*(&arr[4]));
+   printf("value at position 2 is %d\n",arr[1]);
+   }
+  
