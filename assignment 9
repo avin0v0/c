@@ -1,0 +1,51 @@
+#include<stdio.h>
+int main(){
+	
+	
+	//mean of n numbers using arrays
+	int n,avg,s=0;
+	int arr[20];
+	printf("enter no. of elements? ");
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+		printf("enter the elements %d..",i+1);
+		scanf("%d",&arr[i]);
+		s+=arr[i];
+	}
+	avg=s/n;
+	printf("avg of the given array: %d",avg);
+	
+	
+	
+	//largest mumber using the arrays
+	int n,large=0;
+	int arr[20];
+	printf("enter no. of elements? ");
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+		printf("enter the elements %d..",i+1);
+		scanf("%d",&arr[i]);
+		if(arr[i]>large){
+			large=arr[i];
+	    }
+    }
+	printf("largest number amongst array: %d",large);
+	
+	
+	
+	
+	//position of smallest in the arrays 
+	int n,c,small=9999;
+	int arr[20];
+	printf("enter no. of elements? ");
+	scanf("%d",&n);
+	for(int i=0;i<n;i++){
+		printf("enter the elements %d..",i+1);
+		scanf("%d",&arr[i]);
+		if(arr[i]<small){
+			small=arr[i];
+			c=i;
+	    }
+	    
+    }
+	printf("smallest number amongst array is in %d position is : %d",(c+1),small);
