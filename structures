@@ -1,1 +1,31 @@
+#include<stdio.h>
+//learing structures(basics)
 
+int main(){
+
+    struct crickter{
+        float height;
+        int jersey_no;
+        char fav_short;
+    }virat,rohit;
+
+    //struct crickter virat; //no need of this line after declaring in first case.
+    printf("enter jersey no. of virat: ");
+    scanf("%d",&virat.jersey_no);
+    virat.height=178.2;
+    //virat.jersey_no=18;
+    virat.fav_short='c';
+
+    printf("%d",virat.jersey_no);
+
+    //struct crickter rohit;
+    printf("enter jersey no. of rohit: ");
+    scanf("%d",&rohit.jersey_no);
+    rohit.height=179.6;
+    //rohit.jersey_no=45;
+    rohit.fav_short='p';
+
+    printf("%d",rohit.jersey_no);
+    
+
+}
