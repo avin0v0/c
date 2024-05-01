@@ -29,3 +29,22 @@ int main(){
     
 
 }
+
+//using the type deff function.
+int main(){
+   typedef float realno;
+   realno y;
+}
+
+incase of structure, it is also useful:-
+typedef struct crickter{
+        float height;
+        int jersey_no;
+        char fav_short;
+    }cric;
+now you can write
+//cric rohit = struct crickter rohit
+cric rohit;
+
+//using the structures of arrays.
+
