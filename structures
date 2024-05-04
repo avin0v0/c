@@ -47,4 +47,42 @@ now you can write
 cric rohit;
 
 //using the structures of arrays.
+#include<stdio.h>
+int main(){
+    typedef struct pokemon{
+        int speed;
+        int hp;
+        int attack;
+        char tier;
+        char name[15];
+    }pok;
+
+    pok arr[3];
+    arr[0].speed=30;
+    arr[0].hp=300;
+    arr[0].attack=25;
+    arr[0].tier=30;
+    //strcpy(arr[0].name,'PLAYER 1');
+
+    arr[1].speed=40;
+    arr[1].hp=900;
+    arr[1].attack=75;
+    arr[1].tier=30;
+    //strcpy(arr[1].name,"PLAYER 2");
+
+    arr[0].speed=80;
+    arr[0].hp=380;
+    arr[0].attack=25;
+    arr[0].tier=30;
+    //strcpy(arr[0].name,"PLAYER 3");
+
+    for(int i=0;i<=3;i++){
+        printf("%d/n",arr[i].speed);
+        printf("%d/n",arr[i].hp);
+        printf("%d/n",arr[i].attack);
+        printf("%c/n",arr[i].tier);   
+    }
+
+}
+
 
