@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+
+    /*FILE *ptr=fopen("sample1.txt","r");
+    char str[100];
+
+    while(fgets(str,100,ptr)!=NULL){
+        printf("%s",str);
+    }*/
+
+    FILE *ptr=fopen("sample18.txt","w");
+
+    char str[]="hi,my name virat kohli with jersey no. 18 from west delhi..";
+    fputs(str,ptr);
+    fclose(ptr);
+
+}
