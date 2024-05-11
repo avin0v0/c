@@ -1,0 +1,96 @@
+#include<stdio.h>
+#include<limits.h>
+#include<stdbool.h> //for boolean values
+#include<stdlib.h>  //for malloc and calloc
+
+//macro
+#define PI 3.14159265359
+//macro function
+#define area1(r) (PI*r*r)
+
+
+//normal func.
+float area(float r){
+    return PI*r*r;
+}
+
+int main(){
+
+    /*int x1=INT_MAX; //max length of int.
+    printf("%d\n",x1);
+
+    printf("%.11f",PI);
+    printf("\n%f",area1(6.1));
+    printf("\n%f",area(6.1));*/
+
+    //calculator using a switch cases:
+    /*int x,y,n;
+    printf("enter the number in calci: ");
+    scanf("%d%d",&x,&y);
+    
+    printf("\n1 for addition\n");
+    printf("2 for subtraction\n");
+    printf("3 for multiplication\n");
+    printf("4 for division\n");
+
+    printf("operation to performed (1-4): ");
+    scanf("%d",&n);
+
+    switch(n){
+        case 1:
+        printf("%d",x+y);
+        break;
+       case 2:
+        printf("%d",x-y);
+        break;
+       case 3:
+        printf("%d",x*y);
+        break;
+       case 4:
+        printf("%d",x/y);
+        break;
+      default:
+        printf("wrong input!");
+
+    }*/
+
+    int q=sizeof(bool);
+    printf("%d\n",q);
+
+    //malloc:- to allocate data in heap memory
+    /*int *ptr= (int*) malloc(10*sizeof(int)); //vvimp
+    printf("%d",*ptr); 
+    //will give you gargabe value....
+
+    //calloc
+    int *str= (int*) malloc(10,sizeof(int)); //vvimp
+    printf("%d",*str); 
+    //always stores zero,this is the only difference b/w calloc and malloc!*/
+
+    //taking n integers input w/o using arrays!
+    int t;
+    printf("enter no. records you want to add?? ");
+    scanf("%d",&t);
+
+    //using malloc
+    int *ptr=(int*)malloc(t*sizeof(int));
+    int *p=ptr;
+
+    for(int i=1;i<t;i++){
+        scanf("%d ",&(*ptr));
+        ptr++;
+    }
+    for(int i=1;i<t;i++){
+        printf("%d ",(*p));
+        p++;
+    }
+
+    //memory deallocation!
+    free(*ptr);
+    ptr=NULL; //now pointer will not point to something
+
+    
+    
+    
+
+}
